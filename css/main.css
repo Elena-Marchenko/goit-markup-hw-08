@@ -59,7 +59,6 @@ img {
 .container {
   width: 100%;
   padding: 0 15px;
-  border: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -75,7 +74,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
@@ -127,9 +126,11 @@ img {
 }
 
 .header {
+  position: relative;
   background: var(--color-white);
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header__container {
@@ -159,34 +160,76 @@ img {
   display: none;
 }
 
+.header__button:hover .icon-close {
+  fill: var(--color-accent);
+}
+
+.header__button:hover .icon-menu {
+  fill: var(--color-accent);
+}
+
+@media screen and (min-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}
+
 .icon-close {
   width: 18.67px;
   height: 18.67px;
+  fill: var(--color-main);
 }
 
 .icon-menu {
   width: 24px;
   height: 16px;
+  fill: var(--color-main);
+}
+
+.header__menu {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+
+.header__menu.is-open {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .header__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 60px 0;
+  }
 }
 
 .navigation {
-  display: flex;
-  margin-left: 93px;
+  text-align: center;
 }
 
 .navigation .navigation__link.current {
   color: var(--color-accent);
 }
 
-.navigation__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__item {
+    margin-bottom: 40px;
+  }
 }
 
 .navigation__link {
   position: relative;
   color: var(--color-main);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 8px;
 }
 
 .navigation__link.current::after {
@@ -205,6 +248,12 @@ img {
   color: var(--color-accent);
 }
 
+@media screen and (max-width: 767px) {
+  .address__contacts:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
 .address__link {
   display: flex;
   justify-content: center;
@@ -215,7 +264,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-secondary);
-  min-width: 161px;
 }
 
 .address__link:hover, .address__link:focus {
@@ -249,10 +297,6 @@ img {
 .address__link:hover .address__tel,
 .contacts__link:focus .address__tel {
   fill: var(--color-accent);
-}
-
-.address__contacts:not(:last-child) {
-  margin-right: 30px;
 }
 
 .navigation__link,
