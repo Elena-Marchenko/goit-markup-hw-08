@@ -1,0 +1,129 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-contact {
+  font-style: normal;
+  min-width: 231px;
+  text-align: left;
+
+  &,
+  &__contacts {
+    font-family: var(--font-main);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+
+  &__address {
+    color: var(--color-white);
+    margin-bottom: 9px;
+  }
+
+  &__contacts {
+    color: var(--color-grey-translucent);
+  }
+
+  &__link {
+    margin-bottom: 9px;
+  }
+}
+
+.footer__box {
+  margin-right: 70px;
+
+  & > .logo {
+    display: inline-block;
+
+    margin-bottom: 20px;
+    color: var(--color-white);
+  }
+}
+
+.footer__section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+/* Футер соцсети */
+
+.footer-headlin {
+  display: block;
+  margin-bottom: 20px;
+
+  font-family: var(--font-main);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  margin-right: 93px;
+
+  & .social-list__icon {
+    fill: var(--color-white);
+  }
+}
+
+/* ========= Подписка ========= */
+
+.box-sub {
+  display: flex;
+  align-items: center;
+
+  &__mail {
+    width: 358px;
+    height: 50px;
+
+    padding: 0;
+    padding-left: 16px;
+    margin-right: 12px;
+    cursor: pointer;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
+  }
+}
+
+.button-sub {
+  display: flex;
+  align-items: center;
+  max-width: 200px;
+  padding: 10px 28px 10px 29px;
+
+  background: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+
+  &__icon {
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-white);
+  }
+}

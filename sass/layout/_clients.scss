@@ -1,0 +1,96 @@
+.section-clients {
+  margin-bottom: 94px;
+
+  &__headlines {
+    font-family: var(--font-main);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.section-clients__headlines {
+  font-family: var(--font-main);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__yago {
+    width: 44.27px;
+    height: 49.23px;
+  }
+
+  &__tagline {
+    width: 40px;
+    height: 52px;
+  }
+
+  &__company {
+    width: 41px;
+    height: 42.6px;
+  }
+
+  &__foster {
+    width: 79.66px;
+    height: 42.02px;
+  }
+
+  &__brand {
+    width: 59px;
+    height: 47px;
+  }
+
+  &__line {
+    width: 88.48px;
+    height: 45.44px;
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-accent);
+  }
+}
+
+.symbol {
+  fill: #afb1b8;
+  display: block;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: var(--color-accent);;
+  }
+}
