@@ -589,7 +589,7 @@ img {
 }
 
 .features {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
 }
 
 .features__headlines {
@@ -599,6 +599,7 @@ img {
   line-height: 1.4;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
 }
 
@@ -606,22 +607,13 @@ img {
   font-family: var(--font-main);
   font-weight: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
 }
 
-.features__list {
-  display: flex;
-  align-items: flex-start;
-}
-
-.features__cards {
-  min-width: 270px;
-}
-
 .features__cards:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .features__box {
@@ -629,7 +621,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  width: 270px;
+  width: 100%;
   padding: 25px 100px 25px 100px;
   background: #f5f4fa;
   border-radius: 4px;
