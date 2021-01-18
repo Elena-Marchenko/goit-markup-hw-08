@@ -126,7 +126,6 @@ img {
 }
 
 .header {
-  position: relative;
   background: var(--color-white);
   padding-top: 10px;
   padding-bottom: 10px;
@@ -139,11 +138,18 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    position: relative;
+  }
+}
+
 .header__button {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
+  background-color: transparent;
   width: 40px;
   height: 40px;
 }
@@ -191,10 +197,6 @@ img {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
 }
 
-.header__menu.is-open {
-  display: block;
-}
-
 @media screen and (max-width: 767px) {
   .header__menu {
     display: none;
@@ -203,6 +205,9 @@ img {
     left: 0;
     width: 100%;
     padding: 60px 0;
+  }
+  .header__menu.is-open {
+    display: block;
   }
 }
 
@@ -229,7 +234,6 @@ img {
 .navigation__link {
   position: relative;
   color: var(--color-main);
-  padding-bottom: 8px;
 }
 
 .navigation__link.current::after {
@@ -246,6 +250,12 @@ img {
 
 .navigation__link:hover, .navigation__link:focus {
   color: var(--color-accent);
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__link {
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -319,22 +329,12 @@ img {
   margin-bottom: 30px;
   font-family: var(--font-main);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   color: var(--color-white);
   text-transform: uppercase;
-}
-
-.hero__heading {
-  margin-bottom: 30px;
-  font-family: var(--font-main);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  letter-spacing: 0.06em;
-  color: var(--color-white);
-  text-transform: uppercase;
+  text-align: center;
 }
 
 .hero__button {
@@ -361,17 +361,20 @@ img {
 }
 
 .background {
-  max-width: 1600px;
-  margin-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/background.jpg);
+  margin-bottom: 60px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 480px 400px;
   background-color: #c4c4c4;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/bg-mobile@2x.jpg");
+  }
 }
 
 .backdrop {
