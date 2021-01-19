@@ -671,17 +671,18 @@ img {
   margin-bottom: 94px;
 }
 
+@media screen and (max-width: 767px) {
+  .section-example {
+    display: none;
+  }
+}
+
 .example__photo {
   position: relative;
 }
 
 .example__photo:not(:last-child) {
   margin-right: 30px;
-}
-
-.team {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .team__position {
@@ -695,10 +696,9 @@ img {
   font-weight: 500;
 }
 
-.team__photo {
+.team__photo-set {
   margin-bottom: 30px;
-  width: 270px;
-  height: 260px;
+  width: 100%;
 }
 
 .team__name,
@@ -712,15 +712,11 @@ img {
 
 .team__cards {
   padding-bottom: 30px;
-  min-width: 270px;
-  margin-left: 30px;
+  width: 100%;
+  margin-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team__cards:nth-child(4n + 1) {
-  margin-left: 0px;
 }
 
 .container-team {
@@ -729,9 +725,9 @@ img {
 
 .section-team {
   background: #f5f4fa;
-  margin-bottom: 94px;
-  padding-bottom: 94px;
-  padding-top: 95px;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .section-team-headlines {
@@ -740,9 +736,7 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
-  margin-left: 32px;
+  justify-content: center;
 }
 
 .section-clients {
