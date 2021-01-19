@@ -16,33 +16,44 @@
             <!-- Шапка -->
             <nav class="header__container container">
                 <a class="logo link" href="#"><span class="logo-blue">Web</span>Studio</a>
-                <!-ul class="navigation list">
-                    <li class="navigation__item">
-                        <a class="navigation__link link " href="./index.html">Студия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link link current" href="#">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a class="navigation__link link" href="#">Контакты</a>
-                    </li>
-                </!-ul>
-                <ul class="address list">
-                    <li class="address__contacts">
-                        <a class="address__link link" href="mailto:info@devstudio.com">
-                            <svg class="address__mail">
-                                <use href="./image/sprite.svg#icon-mail"></use>
-                            </svg>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="address__contacts">
-                        <a class="address__link link" href="tel:+380961111111">
-                            <svg class="address__tel">
-                                <use href="./image/sprite.svg#icon-tel"></use>
-                            </svg>
-                            +38 096 111 11 11</a>
-                    </li>
-                </ul>
+                <button type="button" class="header__button" aria-expanded="false" aria-controls="header__menu"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./image/sprite.svg#menu"></use>
+                        <use class="icon-close" href="./image/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="header__menu" id="header__menu" data-menu>
+                    <ul class="navigation list">
+                        <li class="navigation__item">
+                            <a class="navigation__link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link link current" href="#">Портфолио</a>
+                        </li>
+                        <li class="navigation__item">
+                            <a class="navigation__link link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="address list">
+                        <li class="address__contacts">
+                            <a class="address__link link" href="mailto:info@devstudio.com">
+                                <svg class="address__mail">
+                                    <use href="./image/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="address__contacts">
+                            <a class="address__link link" href="tel:+380961111111">
+                                <svg class="address__tel">
+                                    <use href="./image/sprite.svg#icon-tel"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
+            
+            
             </nav>
         </header>
         <main>
@@ -51,27 +62,27 @@
                 <h1 class="visually-hidden">Портфолио</h1>
                 <!-- Навигация на другие страницы -->
                 <ul class="filters list">
-                    <li class="filters-box">
-                        <button class="filters-button" href="#" target="_blank" rel="noreferrer noopener">Все</button>
+                    <li class="filters__box">
+                        <button class="filters__button" href="#" target="_blank" rel="noreferrer noopener">Все</button>
                     </li>
-                    <li class="filters-box">
-                        <button class="filters-button" href="#" target="_blank" rel="noreferrer noopener">Веб-сайты</button>
+                    <li class="filters__box">
+                        <button class="filters__button" href="#" target="_blank" rel="noreferrer noopener">Веб-сайты</button>
                     </li>
-                    <li class="filters-box">
-                            <button class="filters-button" href="#" target="_blank" rel="noreferrer noopener">Приложения</button>
+                    <li class="filters__box">
+                            <button class="filters__button" href="#" target="_blank" rel="noreferrer noopener">Приложения</button>
                     </li>
-                    <li class="filters-box">
-                            <button class="filters-button" href="#" target="_blank" rel="noreferrer noopener">Дизайн</button>
+                    <li class="filters__box">
+                            <button class="filters__button" href="#" target="_blank" rel="noreferrer noopener">Дизайн</button>
                     </li>
-                    <li class="filters-box">
-                            <button class="filters-button" href="#" target="_blank" rel="noreferrer noopener">Маркетинг</button>
+                    <li class="filters__box">
+                            <button class="filters__button" href="#" target="_blank" rel="noreferrer noopener">Маркетинг</button>
                     </li>
                     
                 </ul>
                 
             
                     <!-- Наши проекты -->
-                <ul class="projects list">
+                <!-- <ul class="projects list">
                     <li class="projects__box">
                         <a class="projects__link link" href="#">
                             <div class="projects-overlay">
@@ -199,11 +210,11 @@
                             </div>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
             </section>
         </main>
         <!-- Футер -->
-        <footer class="footer">
+        <!-- <footer class="footer">
             <section class="footer__section container">
                 <div class="footer__box">
                     <a class="logo link" href="#">
@@ -266,6 +277,8 @@
                     </div>
                 </form>
             </section>
-        </footer>
+        </footer> -->
+
+        <script src="./js/menu.js"></script>
     </body>
 </html>
