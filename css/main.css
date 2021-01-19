@@ -57,14 +57,14 @@ img {
 }
 
 .container {
-  width: 100%;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin: 0 auto;
   }
 }
 
@@ -699,6 +699,9 @@ img {
 .team__photo-set {
   margin-bottom: 30px;
   width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team__name,
@@ -750,26 +753,20 @@ img {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
-.section-clients__headlines {
-  font-family: var(--font-main);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .clients {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  flex-basis: calc(100% / 2 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 .clients__yago {
@@ -809,7 +806,6 @@ img {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
