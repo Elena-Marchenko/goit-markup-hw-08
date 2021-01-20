@@ -221,8 +221,8 @@ img {
 @media screen and (min-width: 768px) {
   .header__menu {
     display: flex;
+    flex-grow: 1;
     align-items: center;
-    justify-content: space-between;
     margin-left: 88px;
   }
 }
@@ -424,7 +424,7 @@ img {
 
 .background {
   margin-bottom: 60px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bg-mobile.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/bg-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 480px 400px;
@@ -433,9 +433,22 @@ img {
   padding-bottom: 118px;
 }
 
+@media screen and (min-width: 768px) {
+  .background {
+    background-image: url("../image/bg-tablet.jpg");
+    background-size: 768px 400px;
+  }
+}
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .background {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/bg-mobile@2x.jpg");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .background {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/bg-tablet@2x.jpg");
   }
 }
 
