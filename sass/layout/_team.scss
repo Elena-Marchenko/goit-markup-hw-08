@@ -1,4 +1,7 @@
 .team {
+  display: flex;
+  flex-wrap: wrap;
+
   &__position {
     color: var(--color-secondary);
     font-weight: normal;
@@ -17,6 +20,11 @@
     max-width: 100%;
     height: auto;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .team__name,
@@ -30,15 +38,22 @@
 
 .team__cards {
   padding-bottom: 24px;
-  margin-bottom: 30px;
   width: 100%;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
   }
 }
 
