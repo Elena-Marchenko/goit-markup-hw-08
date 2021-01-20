@@ -872,6 +872,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .section-clients {
+    margin-bottom: 60px;
+  }
+}
+
 .clients {
   display: flex;
   flex-wrap: wrap;
@@ -1004,6 +1010,14 @@ img {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 /* Футер соцсети */
 .footer-headlin {
   display: block;
@@ -1040,6 +1054,12 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 768px) {
+  .box-sub__mail {
+    max-width: 450px;
+  }
 }
 
 .button-sub {
