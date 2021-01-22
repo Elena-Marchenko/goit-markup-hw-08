@@ -1025,10 +1025,6 @@ img {
   }
 }
 
-.section-clients {
-  margin-bottom: 94px;
-}
-
 .section-clients__headlines {
   font-family: var(--font-main);
   font-weight: bold;
@@ -1039,19 +1035,32 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .section-clients {
     margin-bottom: 60px;
   }
 }
 
-.clients {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .section-clients {
+    margin-bottom: 94px;
+  }
+  .section-clients__headlines {
+    font-size: 36px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
 }
 
-@media screen and (max-width: 767px) {
+.clients {
+  display: flex;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .clients {
+    flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
   }
@@ -1062,8 +1071,9 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients {
+    flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
   }
@@ -1071,6 +1081,15 @@ img {
     flex-basis: calc(100% / 3 - 30px);
     margin-top: 30px;
     margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    justify-content: space-between;
+  }
+  .clients__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1111,6 +1130,7 @@ img {
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1142,8 +1162,19 @@ img {
 .footer-contact {
   font-style: normal;
   min-width: 231px;
-  text-align: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-contact {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-contact {
+    text-align: left;
+  }
 }
 
 .footer-contact, .footer-contact__contacts {
@@ -1173,15 +1204,40 @@ img {
   color: var(--color-white);
 }
 
-.footer__section {
-  text-align: center;
+@media screen and (min-width: 1200px) {
+  .footer__box {
+    margin-right: 70px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer__section {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-right: 93px;
   }
 }
 
@@ -1201,8 +1257,19 @@ img {
 
 .footer-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-list {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    justify-content: space-between;
+  }
 }
 
 .footer-social .social-list__icon {
@@ -1213,8 +1280,6 @@ img {
 .box-sub__mail {
   width: 100%;
   height: 50px;
-  margin-bottom: 20px;
-  padding-left: 16px;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1223,9 +1288,29 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .box-sub__mail {
     max-width: 450px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box-sub {
+    display: flex;
+    align-items: center;
+  }
+  .box-sub__mail {
+    width: 358px;
+    padding: 0;
+    padding-left: 16px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2f303a;
   }
 }
 
