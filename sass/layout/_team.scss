@@ -1,6 +1,9 @@
 .team {
   display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 
   &__position {
     color: var(--color-secondary);
@@ -21,7 +24,7 @@
     height: auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: -30px;
     margin-left: -30px;
   }
@@ -50,10 +53,20 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+    min-width: 270px;
+    margin-left: 30px;
+
+    &:nth-child(4n + 1) {
+      margin-left: 0px;
+    }
   }
 }
 
@@ -64,6 +77,12 @@
 .section-team {
   background: #f5f4fa;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 95px;
+  }
 }
 
 .section-team-headlines {
@@ -73,6 +92,13 @@
 .social-list {
   display: flex;
   justify-content: center;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+
+    width: 206px;
+    margin-left: 32px;
+  }
 }
 
 // .team {
