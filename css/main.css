@@ -219,6 +219,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 1;
     width: 100%;
     padding: 60px 0;
     background: #ffffff;
@@ -346,6 +347,9 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .address {
+    margin-left: 140px;
+  }
   .address__contacts:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -1127,13 +1131,24 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 90px;
   transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: 170px;
-  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .clients__link {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__link:hover, .clients__link:focus {
@@ -1288,7 +1303,7 @@ img {
   background-color: #2f303a;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .box-sub__mail {
     max-width: 450px;
     margin-bottom: 20px;
@@ -1404,6 +1419,12 @@ img {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__box {
+    flex-basis: calc(100% / 3 - 30px);
   }
 }
 

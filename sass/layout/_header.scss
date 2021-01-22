@@ -88,6 +88,7 @@
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 1;
 
     width: 100%;
     padding: 60px 0;
@@ -211,6 +212,7 @@
 
 .address {
   @media screen and (max-width: 767px) {
+    margin-left: 140px;
     &__contacts:not(:last-child) {
       margin-bottom: 15px;
     }
