@@ -531,7 +531,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .background {
-    max-width: 100%;
     margin-bottom: 94px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../image/bg-desktop.jpg");
     background-size: 3200px 1200px;
@@ -1445,7 +1444,7 @@ img {
   background: var(--color-white);
   border: 1px solid #eeeeee;
   box-sizing: border-box;
-  padding: 24px 20px;
+  padding: 20px;
   border-top: none;
 }
 
@@ -1465,6 +1464,12 @@ img {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--color-secondary);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .border-first {
+    padding-bottom: 56px;
+  }
 }
 
 .projects__link:hover,
