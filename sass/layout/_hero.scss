@@ -59,7 +59,7 @@
       url('../image/bg-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: 480px 400px;
+    background-size: cover;
     background-color: #c4c4c4;
 
     padding-top: 118px;
@@ -73,7 +73,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url('../image/bg-tablet.jpg');
-    background-size: 768px 400px;
+    background-size: cover;
   }
 
   @media screen and (min-width: 1200px) {
@@ -84,7 +84,7 @@
         rgba(47, 48, 58, 0.4)
       ),
       url('../image/bg-desktop.jpg');
-    background-size: 3200px 1200px;
+    background-size: 1600px 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
